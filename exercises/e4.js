@@ -9,9 +9,11 @@
  * splitFirstAndLastNames('John Smith') => ['John', 'Smith']
  */
 
-function splitFirstAndLastNames(str) {
+const splitFirstAndLastNames = (str) =>{
   return str.split(' ');
 }
+
+console.log(splitFirstAndLastNames('Alvaro Tapia'));
 
 
 /** =========================
@@ -19,10 +21,17 @@ function splitFirstAndLastNames(str) {
  * The function returns the value of the age property of the argument object
  * personAge({ id: 1, name: 'Someone', age: 32}) => 32
  */
+let personObject = {
+  id:'1',
+  name:'Someone',
+  age:48
+};
 
-const personAge = function(personObject) {
+const personAge = (personObject) => {
   return personObject.age;
 }
+
+console.log(personAge(personObject));
 
 
 /** =========================
@@ -32,10 +41,12 @@ const personAge = function(personObject) {
  * isNameInArray(['Jon', 'Michael', 'Andrey'], 'James') => false;
  */
 
-const isNameInArray = function(arr, name) {
+const isNameInArray = (arr, name) => {
   return arr.includes(name);
 }
 
+console.log(isNameInArray(['Alvaro', 'Sebas', 'Juan'], 'Alvaro'))
+console.log(isNameInArray(['Alvaro', 'Sebas', 'Juan'], 'Brian'))
 
 /** =========================
  * The logTimer function takes a number as the arguments.
@@ -44,9 +55,9 @@ const isNameInArray = function(arr, name) {
  * !!! Hint: There are two functions to refactor !!!
  */
 
-const logSecondsUpToMax = function(max) {
+const logSecondsUpToMax = (max) => {
   let i = 0;
-  const timer = setInterval(function() {
+  const timer = setInterval(() => {
     if (i < max) {
       console.log(++i);
     } else {
@@ -54,6 +65,8 @@ const logSecondsUpToMax = function(max) {
     }
   }, 1000);
 }
+
+console.log(logSecondsUpToMax(9));
 
 
 

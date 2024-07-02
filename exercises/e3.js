@@ -16,6 +16,21 @@
 
 // Your code goes here...
 
+function doesArrayIncludeItemsBetweenVals (arr, val1, val2) {
+
+  for (let initVal of arr) {
+    if (initVal > val1 && initVal < val2) {
+      return true;
+    }
+ }
+  return false;
+}
+
+console.log(doesArrayIncludeItemsBetweenVals([2,4,2],3 , 5));
+console.log(doesArrayIncludeItemsBetweenVals([2,4,2],5 , 10));
+
+// I had a hard time here because when creating the array I typed it like this (['2,4,2']),
+// meaning the machine was registering the numbers in array as string not numbers
 
 
 
@@ -36,7 +51,39 @@
 
 // Your code goes here...
 
+function getValueWithConditionOne(arg1,arg2) {
+  if (arg1 + arg2 == 40) {
+    return arg1 + arg2;
+  } else  {
+    return (arg1+arg2) * 2;
+  }
+}
 
+// console.log(getValueWithConditionOne(20,20));
+// console.log(getValueWithConditionOne(21,28));
+
+const getValueWithConditionTwo = (arg1,arg2) => {
+  if (arg1 + arg2 == 40) {
+    return arg1 + arg2;
+  } else  {
+    return (arg1+arg2) * 2;
+  }
+}
+
+// console.log(getValueWithConditionTwo(20,20));
+// console.log(getValueWithConditionTwo(20,27));
+
+const getValueWithConditionThree = function(arg1,arg2) {
+  if (arg1 + arg2 == 40) {
+    return arg1 + arg2;
+  } else  {
+    return (arg1+arg2) * 2;
+  }
+
+}
+
+// console.log(getValueWithConditionThree(20,20));
+// console.log(getValueWithConditionThree(20,24));
 
 
 // === TEST YOURSELF ===

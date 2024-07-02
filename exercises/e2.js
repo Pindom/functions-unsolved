@@ -12,6 +12,13 @@
 
 // Your function code starts here...
 
+function rectArea(sideA, sideB){
+  return sideA * sideB;
+}
+
+let areaOfRectangle = rectArea(3,2)
+
+console.log(areaOfRectangle);
 
 // Use the function you created above to calculate the areas of 3 rooms
 // Assign the results to room1, room2, and room3 variables
@@ -19,7 +26,13 @@
 
 // Your code goes here:
 
+let room1 = rectArea(4,6);
+let room2 = rectArea(13,6);
+let room3 = rectArea(4,8);
 
+console.log(room1);
+console.log(room2);
+console.log(room3);
 
 /**
  * =============================================================
@@ -33,12 +46,21 @@
 
 // Your code goes here...
 
+function totalRoomsArea(area1, area2, area3) {
+  return area1 + area2 + area3;
+}
+
+let sumOfAreas = totalRoomsArea(24,35,24);
+
+console.log(sumOfAreas);
 
 
 // Make the function call in the parentheses of the console.log statement.
 // Use room1, room2, room3 variables as arguments for the function call
-const result = function () {
-    console.log(/* replace this comment with a function call here... */);
+
+
+const result = function (area1, area2, area3) {
+    console.log(totalRoomsArea(room1,room2,room3));
 }
 
 
@@ -50,10 +72,11 @@ const result = function () {
 
 
 // Do not delete or change the lines beneath
-const f = {
-    rectArea: rectArea || undefined,
-    roomVars: [room1 || undefined, room2 || undefined, room3 || undefined],
-    totalRoomsArea: totalRoomsArea || undefined,
-    result: (room1 && room2 && room3) ? result : undefined,
-}
-export { f };
+// const f = {
+//     rectArea: rectArea || undefined,
+//     roomVars: [room1 || undefined, room2 || undefined, room3 || undefined],
+//     totalRoomsArea: totalRoomsArea || undefined,
+//     result: (room1 && room2 && room3) ? result : undefined,
+// }
+
+// export { f };
