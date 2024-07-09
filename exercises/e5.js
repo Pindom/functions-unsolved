@@ -57,16 +57,16 @@ console.log(sumOfTwoIntegers(7, 7));
 
 // Your code goes here...
 
-const isOneOfThemOrTheirSumIsForty = function(num1 , num2) {
+const isOneOfThemOrTheirSumIsFourty = function(num1 , num2) {
   if (num1 === 40 || num2 === 40 || num1+num2 === 40) {
   return true;
   } else return false;
 }
 
-console.log(isOneOfThemOrTheirSumIsForty(40,0))
-console.log(isOneOfThemOrTheirSumIsForty(0,40))
-console.log(isOneOfThemOrTheirSumIsForty(20,20))
-console.log(isOneOfThemOrTheirSumIsForty(20,90))
+console.log(isOneOfThemOrTheirSumIsFourty(40,0))
+console.log(isOneOfThemOrTheirSumIsFourty(0,40))
+console.log(isOneOfThemOrTheirSumIsFourty(20,20))
+console.log(isOneOfThemOrTheirSumIsFourty(20,90))
 
 
 
@@ -82,4 +82,4 @@ const f = {
   sumOfTwoIntegers: sumOfTwoIntegers || undefined,
   isOneOfThemOrTheirSumIsFourty: isOneOfThemOrTheirSumIsFourty || undefined,
 }
-export { f }
+export { f };

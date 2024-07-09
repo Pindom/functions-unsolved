@@ -27,7 +27,7 @@ console.log(areaOfRectangle);
 // Your code goes here:
 
 let room1 = rectArea(4,6);
-let room2 = rectArea(13,6);
+let room2 = rectArea(13,3);
 let room3 = rectArea(4,8);
 
 console.log(room1);
@@ -72,11 +72,11 @@ const result = function (area1, area2, area3) {
 
 
 // Do not delete or change the lines beneath
-// const f = {
-//     rectArea: rectArea || undefined,
-//     roomVars: [room1 || undefined, room2 || undefined, room3 || undefined],
-//     totalRoomsArea: totalRoomsArea || undefined,
-//     result: (room1 && room2 && room3) ? result : undefined,
-// }
+const f = {
+    rectArea: rectArea || undefined,
+    roomVars: [room1 || undefined, room2 || undefined, room3 || undefined],
+    totalRoomsArea: totalRoomsArea || undefined,
+    result: (room1 && room2 && room3) ? result : undefined,
+}
 
-// export { f };
+export { f };

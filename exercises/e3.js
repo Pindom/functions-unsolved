@@ -52,29 +52,29 @@ console.log(doesArrayIncludeItemsBetweenVals([2,4,2],5 , 10));
 // Your code goes here...
 
 function getValueWithConditionOne(arg1,arg2) {
-  if (arg1 + arg2 == 40) {
+  if (arg1 == 40 && arg2 == 40) {
     return arg1 + arg2;
   } else  {
     return (arg1+arg2) * 2;
   }
 }
 
-// console.log(getValueWithConditionOne(20,20));
-// console.log(getValueWithConditionOne(21,28));
+console.log(getValueWithConditionOne(20,20));
+console.log(getValueWithConditionOne(21,28));
 
 const getValueWithConditionTwo = (arg1,arg2) => {
-  if (arg1 + arg2 == 40) {
+  if (arg1 == 40 && arg2 == 40) {
     return arg1 + arg2;
   } else  {
     return (arg1+arg2) * 2;
   }
 }
 
-// console.log(getValueWithConditionTwo(20,20));
-// console.log(getValueWithConditionTwo(20,27));
+console.log(getValueWithConditionTwo(20,20));
+console.log(getValueWithConditionTwo(20,27));
 
 const getValueWithConditionThree = function(arg1,arg2) {
-  if (arg1 + arg2 == 40) {
+  if (arg1 == 40 && arg2 == 40) {
     return arg1 + arg2;
   } else  {
     return (arg1+arg2) * 2;
@@ -82,8 +82,8 @@ const getValueWithConditionThree = function(arg1,arg2) {
 
 }
 
-// console.log(getValueWithConditionThree(20,20));
-// console.log(getValueWithConditionThree(20,24));
+console.log(getValueWithConditionThree(20,20));
+console.log(getValueWithConditionThree(20,24));
 
 
 // === TEST YOURSELF ===

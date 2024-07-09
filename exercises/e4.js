@@ -83,4 +83,4 @@ const f = {
   isNameInArray: isNameInArray || undefined,
   logSecondsUpToMax: logSecondsUpToMax || undefined,
 }
-export { f }
+export { f };

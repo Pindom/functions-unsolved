@@ -16,13 +16,11 @@
 // Your code goes here
 
 
-function logMessage(par1, par2) {
-  return par1 + ', ' + par2;
+function logMessage() {
+  console.log("Hello, World!")
 } 
 
-let consoleMessage = logMessage('Hello','World!')
 
-// console.log(consoleMessage);
 
 
 
@@ -39,13 +37,12 @@ let consoleMessage = logMessage('Hello','World!')
 
 // Your code goes here...
 
-function logMyMessage(par1, par2, par3, par4, par5) {
-  return par1 + par2 + par3 + par4 + par5;
+function logMyMessage(param) {
+  console.log(param)
 }
 
-let consoleMessage2 = logMyMessage ('I ' , 'log ' , 'my ' , 'first ' , 'message!');
 
-// console.log(consoleMessage2);
+
 
 /**
  * ===============================================================
@@ -60,12 +57,10 @@ let consoleMessage2 = logMyMessage ('I ' , 'log ' , 'my ' , 'first ' , 'message!
 // Your code goes here...
 
 function logMessageWithMyName(nameInput) {
-  return 'My name is ' + nameInput;
+  console.log('My name is ' + nameInput + '!');
 }
 
-let nameLog = logMessageWithMyName('Alvaro');
 
-// console.log(nameLog);
 
 
 /**
@@ -82,12 +77,12 @@ let nameLog = logMessageWithMyName('Alvaro');
 // Your code goes here...
 
 function logMyInfo(firstName, age) {
-  return 'My name is ' + firstName + '. ' + 'I am ' + age +' years old!'
+  console.log('My name is ' + firstName + '. I am ' + age + ' years old!');
 }
 
-let nameAndAge = logMyInfo('Alvaro', '26');
 
-// console.log(nameAndAge);
+
+
 
 
 // === TEST YOURSELF ===
